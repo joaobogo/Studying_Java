@@ -1,14 +1,14 @@
 package edu.joao.tenthmodule.fila;
 
-public class No {
+public class No<T> {
 
-    private Object object;
-    private No refNo;
+    private T object;
+    private No<T> refNo;
 
     public No() {
     }
 
-    public No(Object object) {
+    public No(T object) {
         this.refNo = null;
         this.object = object;
     }
@@ -17,7 +17,7 @@ public class No {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
@@ -33,5 +33,5 @@ public class No {
         return "No [object=" + object + "]";
     }
 
-    
+
 }
